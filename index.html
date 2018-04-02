@@ -46,36 +46,6 @@
         </div>
       </nav>
     </header>
-    <!-- Modal-->
-    <div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
-      <div role="document" class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="exampleModalLabel" class="modal-title">Sign Up Modal</h5>
-            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-          </div>
-          <div class="modal-body">
-            <form id="signupform" action="#">
-              <div class="form-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fullname">
-              </div>
-              <div class="form-group">
-                <label for="username">User Name</label>
-                <input type="text" name="username" placeholder="User Name" id="username">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="text" name="email" placeholder="Email Address" id="email">
-              </div>
-              <div class="form-group">
-                <button type="submit" class="submit btn btn-primary btn-shadow btn-gradient">Signup</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <section id="hero" class="hero hero-home bg-gray">
       <div class="container">
         <div class="row d-flex">
@@ -83,8 +53,8 @@
             <h1> XDK &mdash; Cross Domain &nbsp; Development Kit</h1>
             <p class="hero-text">Un dispositivo programable con 6 sensores para prototipar cualquier solución de IoT.</p>
             <div class="CTA">
-	      <a href="#features" class="btn btn-primary btn-shadow btn-gradient link-scroll">Saber más</a>
-	      <a href="#" class="btn btn-outline-primary">Ejemplos</a></div>
+	      <a href="#about-us" class="btn btn-primary btn-shadow btn-gradient link-scroll">Saber más</a>
+	      <a href="#features" class="btn btn-outline-primary">Ejemplos</a></div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
 	    <img src="img/xdk.png" width="600" height="600" alt="XDK Bosch" class="img-fluid">
@@ -141,76 +111,86 @@
 	    <li>Sensor de ruido acústico (AKU340)</li>
 	    <li>Sensor de luz ambiental (MAX44009)</li>
 	  </ul>
-        </div><a href="#" class="btn btn-primary btn-shadow btn-gradient">Discover More</a>
+        </div><a href="#features" class="btn btn-primary btn-shadow btn-gradient">Ejemplos de uso</a>
       </div>
     </section>
         <section id="extra-features" class="extra-features bg-primary">
       <div class="container text-center">
         <header>
-          <h2>More great features             </h2>
+          <h2>Conectividad </h2>
           <div class="row">
-            <p class="lead col-lg-8 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            <p class="lead col-lg-8 mx-auto">Hay diferentes formas en las que es posible interactuar con el XDK. Aquí los protocolos</p>
           </div>
         </header>
         <div class="grid row">
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-diploma"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">HTTP y HTTPS</h3>
+            <p>El XDK soporta HTTP nativamente y ofrece dos módulos para hacer peticiones </p>
           </div>
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-folder-1"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">Bluetooth</h3>
+            <p>El XDK proporiciona diferentes APIs BLE para gestionar la funcionalidad Bluetooth. </p>
           </div>
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-gears"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">LWM2M</h3>
+            <p>Protocolo M2M que reduce la transferencia de datos innecesarios como http cuando se conectan dispositivos embebidos </p>
           </div>
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-management"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">USB</h3>
+            <p>Interfaz para todos los dispositivos periféricos, que se utiliza para transmitir datos y fuente de alimentación</p>
           </div>
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-pie-chart"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">MQTT</h3>
+            <p>Protocolo de mensajes diseñado para comunicación M2M y aplicaciones Internet of Things </p>
           </div>
           <div class="item col-lg-4 col-md-6">
             <div class="icon"> <i class="icon-quality"></i></div>
-            <h3 class="h5">Lorem Ipsum Dolor</h3>
-            <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h3 class="h5">CoAP</h3>
+            <p>Constrained Application Protocol (CoAP) diseñado para ser barato y para trabajar con microcontroladores con poca RAM </p>
           </div>
         </div>
       </div>
     </section>
-    <section id="features" class="features">
+	<section id="features" class="features">
+	  <header class="text-center no-margin-bottom">   
+          <h2>Ejemplos</h2>
+          <p class="lead">¡Código listo para usar en tus aplicaciones IoT!</p>
+</header>
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="text col-lg-6 order-2 order-lg-1">
-            <div class="icon"><img src="img/medal.svg" alt="..." class="img-fluid"></div>
-            <h4>Your peace of mind is our business</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p><a href="#" class="btn btn-primary btn-shadow btn-gradient">View More</a>
+ 	  <div class="col-lg-1"></div>
+          <div class="image col-lg-4"><img src="img/twitter.svg" alt="..." class="img-fluid"></div>
+	  <div class="col-lg-1"></div>
+	  <div class="text col-lg-6 ">
+            <div class="icon"><img src="img/cup.svg" alt="..." class="img-fluid"></div>
+            <h4>Alertas por Twitter</h4>
+            <p>Obtén la temperatura actual y transmítela a tu computadora con el puerto serial. A través de Python lee la temperatura y si la temperatur excede un límite, envía una alerta por Twitter. </p><a href="https://github.com/connectorybybosch/XDKTEMP" class="btn btn-primary btn-shadow btn-gradient">Ver más</a>
           </div>
-          <div class="image col-lg-6 order-1 order-lg-2"><img src="img/feature-1.png" alt="..." class="img-fluid"></div>
+	</div>
+        <div class="row d-flex align-items-center">
+          <div class="text col-lg-6">
+            <div class="icon"><img src="img/medal.svg" alt="..." class="img-fluid"></div>
+            <h4>Transmite información vía HTTP</h4>
+            <p>Inicializa el módulo WiFi del XDK y transmite datos hacia una aplicación vía REST. </p><a href="https://github.com/connectorybybosch/XDK-HTTP" class="btn btn-primary btn-shadow btn-gradient">Ver más</a>
+          </div>
+	  <div class="col-lg-1"></div>
+          <div class="image col-lg-4 "><img src="img/http.svg" alt="..." class="img-fluid"></div>
+	  <div class="col-lg-1"></div>
         </div>
         <div class="row d-flex align-items-center">
-          <div class="image col-lg-6"><img src="img/feature-2.png" alt="..." class="img-fluid"></div>
+ 	  <div class="col-lg-1"></div>
+          <div class="image col-lg-4"><img src="img/bluetooth.svg" alt="..." class="img-fluid"></div>
+	  <div class="col-lg-1"></div>
           <div class="text col-lg-6">
             <div class="icon"><img src="img/hourglass.svg" alt="..." class="img-fluid"></div>
-            <h4>Your peace of mind is our business</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p><a href="#" class="btn btn-primary btn-shadow btn-gradient">View More</a>
+            <h4>Envía datos del acelerómetro con el módulo Bluetooth</h4>
+            <p>Aprende a inicializar el giroscopio, recupera lecturas y transmítelo hacia cualquier dispositivo con Bluetooth. </p><a href="https://github.com/connectorybybosch/XDKBLE" class="btn btn-primary btn-shadow btn-gradient">Ver más</a>
           </div>
-        </div>
-        <div class="row d-flex align-items-center">
-          <div class="text col-lg-6 order-2 order-lg-1">
-            <div class="icon"><img src="img/cup.svg" alt="..." class="img-fluid"></div>
-            <h4>Your peace of mind is our business</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p><a href="#" class="btn btn-primary btn-shadow btn-gradient">View More</a>
-          </div>
-          <div class="image col-lg-6 order-1 order-lg-2"><img src="img/feature-3.png" alt="..." class="img-fluid"></div>
         </div>
       </div>
     </section>
@@ -218,43 +198,36 @@
     <section id="testimonials" class="testimonials">
       <div class="container">
         <header class="text-center no-margin-bottom">   
-          <h2>Happy Clients</h2>
-          <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+          <h2>Descargas</h2>
+          <p class="lead">Aquí tienes todo lo necesario para empezar a prototipar con el XDK</p>
         </header>
         <div class="owl-carousel owl-theme testimonials-slider"> 
           <div class="item-holder">
             <div class="item">
-              <div class="avatar"><img src="img/avatar-3.jpg" alt="..." class="img-fluid"></div>
+              <div class="avatar"><img src="img/Gnulinux.png" alt="..." class="img-fluid"></div>
               <div class="text">
-                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Jessica Watson</strong>
+              
+                <p>Para usar el XDK-workbench en linux, sigue los siguientes pasos:</p>
+		<ol>
+		  <li>Descarga el siguiente <a href="https://drive.google.com/file/d/1gvSioPF-hv_5mGtT1DgHO0qJ453d3gWv/view" target="_blank">archivo</a></li>
+		  <li>Descomprime el archivo usando unzip</li>
+		  <li>Añade el permiso de ejecución, con chmod +x</li>
+		  <li>Ejecuta el script de instalación</li>
+		</ol>
               </div>
             </div>
           </div>
           <div class="item-holder">
             <div class="item">
-              <div class="avatar"><img src="img/avatar-5.jpg" alt="..." class="img-fluid"></div>
+              <div class="avatar"><img src="img/windows.png" alt="..." class="img-fluid"></div>
               <div class="text">
-                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Sarrah Wood</strong>
-              </div>
-            </div>
-          </div>
-          <div class="item-holder">
-            <div class="item">
-              <div class="avatar"><img src="img/avatar-3.jpg" alt="..." class="img-fluid"></div>
-              <div class="text">
-                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Jessica Watson</strong>
-              </div>
-            </div>
-          </div>
-          <div class="item-holder">
-            <div class="item">
-              <div class="avatar"><img src="img/avatar-5.jpg" alt="..." class="img-fluid"></div>
-              <div class="text">
-                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Sarrah Wood</strong>
+                <p>Para usar el XDK-workbench en windows, sigue los siguientes pasos:</p>
+		<ol>
+		  <li>Asegurate de tener la última versión de Java instalada </li>
+		  <li>Descarga el siguiente <a href="https://drive.google.com/open?id=11clSrTA394k16e9cmQao6gx6Qz35MOG-" target="_blank">archivo</a></li>
+		  <li>Descomprime el archivo</li>
+		  <li>Ejecuta el archivo de instalación</li>
+		 <ol/>
               </div>
             </div>
           </div>
@@ -264,6 +237,7 @@
     <div id="scrollTop">
       <div class="d-flex align-items-center justify-content-end"><i class="fa fa-long-arrow-up"></i>To Top</div>
     </div>
+    <!--
     <footer class="main-footer">
       <div class="container">
         <div class="row">
@@ -275,7 +249,8 @@
             <ul class="social-icons list-inline">
               <li class="list-inline-item"><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
               <li class="list-inline-item"><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" targ
+et="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
               <li class="list-inline-item"><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
             </ul>
           </div>
@@ -320,7 +295,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </foeoter>-->
     <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
